@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<!-- 修改网页标题 -->
+    <title>畲语课本</title>
+</head>
+
+
+<body>
+
+<ul id="menu">
+	<!-- 以下添加和修改目录 -->
+
+	<!-- 目录格式：<li><p>章节标题</p><b>页码</b></li> -->
+
+	 <li><p>第一课 我们的学校</p><b>2</b></li>
+	<li><p>第二课 热闹的畲族婚宴</p><b>8</b></li>
+	<li><p>第三课 广东的畲族村</p><b>13</b></li>
+	<li><p>第四课 畲族故地罗浮山</p><b>23</b></li>
+	<li><p>第五课 植物药用的小知识（上）</p><b>30</b></li>
+	<li><p>第六课 植物的药用小知识（下）</p><b>39</b></li>
+	<li><p>第七课 蚯蚓和笋牙</p><b>48</b></li>
+	<li><p>第八课 清清溪水山坑螺</p><b>52</b></li>
+	<li><p>第九课 狂傲的老虎</p><b>59</b></li>
+	<li><p>第十课 蜗牛和蚂蚁</p><b>66</b></li>
+	<li><p>第十一课 借了一担谷</p><b>71</b></li>
+	<li><p>第十二课 老实人和狡猾人</p><b>71</b></li>
+	<li><p>第十三课 我们一起打糍粑</p><b>85</b></li>
+	<li><p>第十四课 畲家稻香酿美酒</p><b>91</b></li>
+	<li><p>第十五课 好山好水好豆腐</p><b>98</b></li>
+	<li><p>第十六课 茶园芳香</p><b>104</b></li>
+	<li><p>第十七课 粒粒皆辛苦</p><b>111</b></li>
+	<li><p>附录</p><b>120</b></li>
+	<li><p>新时代畲语三字经</p><b>120</b></li>
+	<li><p>嶂背村歌：畲寨传喜讯</p><b>123</b></li>
+	<li><p>畲语俗语</p><b>124</b></li>
+	<li><p>词汇表</p><b>127</b></li>
+
+</ul>
+
+	<!-- 下面div标签区域用来设置图书页码 ，以每页的录音文件个数。每页为1个图片文件。安排多少录音，由用户自行定义-->
+
+<div id="setting">
+
+	<!-- 设置总页码：文件命名格式: ###.png 如"001.png"..."105.png"  ，例如，图书最后一页的图片文件名为150.png，就填150 -->
+
+	<div id="pageTotal">130</div>
+
+	<!-- 设置正文第1页图片文件序号。例如：正文第1页文件名为012.png，则填12 -->
+
+	<div id="startPage">12</div>
+
+	<!-- 下面设置页面几个播放图标的间隔。例如：30像素，填30 -->
+
+	<div id="icon_margin">30</div>	
+
+	<!-- 页面宽度：例：600像素，填600，可填0为全屏 -->
+
+	<div id="page_width">600</div>
+
+	<!-- 图片格式：例：png或jpg -->
+
+	<div id="img_type">png</div>
+
+</div>
+
+
+<ul id="file">
+	<!-- 以下设置音频文件数量。每页有多少个音频文件，就填写多少条标签 -->
+	<!-- <p>标签里填正文页码，<b>标签里填音频文件或视频文件名 -->
+
+	<li><p>2</p><b>SHXL01text.mp3</b><b>001.mp4</b></li>
+	<li><p>6</p><b>SHXL01words.mp3</b></li>
+	<li><p>8</p><b>SHXL02text.mp3</b></li>
+	<li><p>12</p><b>SHXL02words.mp3</b></li>
+	<li><p>13</p><b>SHXL03text.mp3</b></li>
+	<li><p>21</p><b>SHXL03words.mp3</b></li>
+	<li><p>13</p><b>SHXL03text.mp3</b></li>
+	<li><p>21</p><b>SHXL03words.mp3</b></li>
+	<li><p>23</p><b>SHXL04text.mp3</b></li>
+	<li><p>25</p><b>SHXL04words.mp3</b></li>
+	<li><p>30</p><b>SHXL05text.mp3</b></li>
+	<li><p>36</p><b>SHXL05words.mp3</b></li>
+	<li><p>39</p><b>SHXL06text.mp3</b></li>
+	<li><p>44</p><b>SHXL06words.mp3</b></li>
+
+	<li><p>46</p><b>SHXL07text.mp3</b></li>
+	<li><p>50</p><b>SHXL07words.mp3</b></li>
+	<li><p>52</p><b>SHXL08text.mp3</b></li>
+	<li><p>55</p><b>SHXL08words.mp3</b></li>
+	<li><p>59</p><b>SHXL09text.mp3</b></li>
+	<li><p>64</p><b>SHXL09words.mp3</b></li>
+	<li><p>66</p><b>SHXL10text.mp3</b></li>
+	<li><p>70</p><b>SHXL10words.mp3</b></li>
+	<li><p>71</p><b>SHXL11text.mp3</b></li>
+	<li><p>75</p><b>SHXL12words.mp3</b></li>
+	<li><p>77</p><b>SHXL13text.mp3</b></li>
+	<li><p>82</p><b>SHXL13words.mp3</b></li>
+
+	<li><p>91</p><b>SHXL14text.mp3</b></li>
+	<li><p>96</p><b>SHXL14words.mp3</b></li>
+	<li><p>98</p><b>SHXL15text.mp3</b></li>
+	<li><p>103</p><b>SHXL15words.mp3</b></li>
+	<li><p>104</p><b>SHXL16text.mp3</b></li>
+	<li><p>109</p><b>SHXL16words.mp3</b></li>
+	<li><p>111</p><b>SHXL17text.mp3</b></li>
+	<li><p>116</p><b>SHXL17words.mp3</b></li>
+
+	<li><p>120</p><b>SHXsanzijing.mp3</b></li>
+	<li><p>123</p><b>SHXsong.mp3</b></li>
+	<li><p>124</p><b>SHXsuyu.mp3</b></li>
+
+	<li><p>127</p><b>SHXvocab127.mp3</b></li>
+	<li><p>128</p><b>SHXvocab128.mp3</b></li>
+	<li><p>129</p><b>SHXvocab129.mp3</b></li>
+	<li><p>130</p><b>SHXvocab130.mp3</b></li>
+	<li><p>131</p><b>SHXvocab131.mp3</b></li>
+	<li><p>132</p><b>SHXvocab132.mp3</b></li>
+	<li><p>133</p><b>SHXvocab133.mp3</b></li>
+</ul>
+
+
+	
+	
+	
+	
+	
+<!-- 以下内容请不要修改 *************************************************************************************************************************** -->
+<!-- 侧滑导航根容器 -->
+<div class="mui-off-canvas-wrap mui-draggable">
+  <!-- 菜单容器 -->
+  <aside class="mui-off-canvas-left" style="bottom: 50px; background-color: #efeff4;">
+    <div class="mui-scroll-wrapper">
+        <header class="mui-bar mui-bar-nav">
+          			<h1 class="mui-title">畲语课本</h1>
+          		</header>
+      <div class="mui-scroll" style="top: 45px;background-color: #efeff4;">
+        <!-- 菜单具体展示内容 -->
+        <ul class="mui-table-view menu">
+        <li class="mui-table-view-cell" data-p="2"><a class="mui-navigate-right">第一课 我们的学校</a></li>
+        <li class="mui-table-view-cell " data-p="8"><a class="mui-navigate-right">第二课 热闹的畲族婚宴</a></li>
+        <li class="mui-table-view-cell" data-p="13"><a class="mui-navigate-right">第三课 广东的畲族村</a></li>
+        <li class="mui-table-view-cell" data-p="24"><a class="mui-navigate-right">第四课 畲族故地罗浮山</a></li>
+		</ul>
+		
+		<p style="height: 80px;"></p>
+      </div>
+    </div>
+  </aside>
+  <!-- 主页面容器 -->
+  <div class="mui-inner-wrap">
+    <!-- 主页面标题 -->
+    <header class="mui-bar mui-bar-nav">
+      <h1 class="mui-title">畲语课本</h1>
+    </header>
+    <div class="mui-content mui-scroll-wrapper">
+      <div class="mui-scroll">
+        <!-- 主界面具体展示内容 -->
+        <div id="slider" class="mui-slider" >
+          <div class="mui-slider-group mui-slider-loop">
+        	<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+        	<div class="mui-slider-item mui-slider-item-duplicate">
+        	  <a href="#">
+        		<img src="" class="img3">
+        	  </a>
+        	</div>
+        	<!-- 第一张 -->
+        	<div class="mui-slider-item">
+        	  <a href="#">
+        		<img src="" class="img1">
+        	  </a>
+        	</div>
+        	<!-- 第二张 -->
+        	<div class="mui-slider-item">
+        	  <a href="#">
+        		<img src="" class="img2">
+        	  </a>
+        	</div>
+        	<!-- 第三张 -->
+        	<div class="mui-slider-item">
+        	  <a href="#">
+        		<img src="" class="img3">
+        	  </a>
+        	</div>
+        	<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+        	<div class="mui-slider-item mui-slider-item-duplicate">
+        	  <a href="#">
+        		<img src="" class="img1">
+        	  </a>
+        	</div>
+          </div>
+          <div class="mui-slider-indicator mui-hidden">
+        	<div class="mui-indicator mui-active"></div>
+        	<div class="mui-indicator"></div>
+        	<div class="mui-indicator"></div>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+				<div id="plays">
+				<img src="index_files/play.jpg" width="40px" data-file="1">
+				<img src="index_files/play.jpg" width="40px" data-file="1">
+				</div>
+  </div>
+</div>
+	<div id="playbuttons">
+		
+	</div>
+	<!-- 页脚菜单 -->
+		<footer class="mui-bar mui-bar-tab">
+					<a class="mui-tab-item mui-active home" href="#home">
+						<span class="mui-icon mui-icon-home"></span>
+					</a>
+					<a class="mui-tab-item prev" href="#message">
+						<span class="mui-icon mui-icon mui-icon-arrowleft"></span>
+						
+					</a>
+					<a class="mui-tab-item" href="#setting">
+						<input type="text" name="" value="1/150" id="i_page" />
+					</a>
+		            
+					<a class="mui-tab-item next" href="#setting">
+						<span class="mui-icon mui-icon mui-icon-arrowright"></span>
+						
+					</a>
+					<a class="mui-tab-item mp3" href="#setting">
+						<span class="mui-icon mui-icon "></span>
+						
+					</a>
+		            
+				</footer>
+				<audio src="" >
+					当前浏览器不支持audio
+				</audio>
+				<style type="text/css">
+					#i_page{
+						margin: 0;
+						    height: 30px;
+						    width: 80px;
+						    padding: 0px;
+						    text-align: center;
+						}
+					.autoheight{
+						overflow: auto;
+						height: 100%;
+					}
+					#plays{width: 40px;position: absolute;top: 80px;left: 10px;z-index: 999;}
+					#menu,#setting,#file{display: none;}
+					video{width: 90%}
+				</style>
+				<script src="index_files/mui.min.js"></script>
+				<script src="index_files/jq.js"></script>
+				<link href="index_files/mui.min.css" rel="stylesheet"/>
+				<script type="text/javascript" charset="utf-8">
+				  	
+					 
+				</script>
+<script type="text/javascript">
+//横屏
+page_width=$("#page_width").text()*1
+if(page_width>0){
+if ($("body").width()>$("body").height()) {
+	var w=$("body").width()-page_width;
+	$("body").css("padding-left",w/2)
+	$("body").css("padding-right",w/2)
+	$("footer").css("margin-left",w/2)
+	$("footer").css("margin-right",w/2)
+	$("footer").css("width",page_width)
+}
+}
+
+var curpage=1;//当前页
+var sumpage=146;//总页数
+var startpage=2;//正文第一页
+var oldSum=0;		//上次的图片滑动页码
+var playlist=[];//音频列表
+var oldmp3="";//上一次播放的音频文件
+var img_type =$("#img_type").text();
+	//显示目录
+	$(".home").click(function(event){
+		if($(".mui-draggable").hasClass("mui-active")){ //目录已打开
+			mui('.mui-off-canvas-wrap').offCanvas().close();
+			// showplayer();
+		}else{
+			mui('.mui-off-canvas-wrap').offCanvas().show();
+			// $("#plays").empty();
+		}
+		
+		})
+		//书本滑动事件
+		document.querySelector('.mui-slider').addEventListener('slide', function(event) {
+		 console.log(event.detail.slideNumber );
+		 let sn=event.detail.slideNumber;
+		 if(sn-oldSum==1 || sn-oldSum==-2){//下一页
+		 		//$(".next").click();
+		 		log("next")
+		 	//if(curpage==sumpage){mui('.mui-slider').slider().preItem();return;}
+			if(curpage<sumpage)curpage++;
+			showpage(sn);
+			log(sn+"-"+curpage)
+
+		 }else{//上一页
+		 	log("pre")
+		 	if(curpage>1)curpage--;
+			showpage(sn);
+		 	//if(curpage==1){mui('.mui-slider').slider().nextItem();return;}
+		 	
+		 }
+		 
+
+		 	oldSum=sn;
+		 })
+		 //显示第几页
+	function showpage(ctrlnum=0){ //滑动控件当前页
+		// mui('.mui-slider').slider().slideNumber  .gotoItem(index);
+		//上一页的控件名
+		preImg=".img"+(ctrlnum);
+		if (ctrlnum==0) {preImg=".img3"}
+
+		nextImg=".img"+(ctrlnum+2);
+		if (ctrlnum==2) {nextImg=".img1"}
+
+		$(preImg).attr("src",getfile(getPreNum(curpage)));
+		$(".img"+(ctrlnum+1)).attr("src",getfile(curpage));
+		$(nextImg).attr("src",getfile(getNextNum(curpage)));
+		showpagenum();
+		showplayer();
+		//$("#i_page").val(curpage+"/"+sumpage);
+		// log("--"+nextImg+getfile(getNextNum(curpage)))
+		// $("audio")[0].pause();
+	}
+	//输入框显示页码
+	function showpagenum() {
+		var temp =curpage-startpage;
+		if (temp<1){temp="前言";}
+		$("#i_page").val(temp+"/"+sumpage);
+	}
+	//上一页的页码
+	function getPreNum(i) {
+		if(i==1){return sumpage;}
+		return --i;
+	}
+	//下一页的页码
+	function getNextNum(i) {
+		if(i==sumpage){return 1;}
+		return ++i;
+	}
+	//页码转文件名
+	function getfile(i){
+		let path="index_files/"
+		if(i<10){return path+"00"+i+"."+img_type;}
+		if(i<100){return path+"0"+i+"."+img_type;}
+		if(i<1000){return path+""+i+"."+img_type;}
+	}
+	//点击目录
+	mui(".mui-table-view").on('tap','.mui-table-view-cell',function(){
+		var id = this.getAttribute("data-p");
+		curpage=id*1+startpage;
+		showpage(mui('.mui-slider').slider().slideNumber);
+		// $(".img1").attr("src","img/0"+id+".png");
+		// console.log($(".img1").attr("src"));
+		mui('.mui-off-canvas-wrap').offCanvas().close();
+		// mui('.mui-slider').slider().gotoItem(0);mui('.mui-slider').slider().slideNumber
+		$("audio")[0].pause();
+		})
+		//上一页
+		$(".prev").click(function(){
+			if(curpage==1)return;
+			curpage--;
+			showpage(mui('.mui-slider').slider().slideNumber);
+		})
+		//下一页
+		$(".next").click(function(){
+			if(curpage==sumpage)return;
+			curpage++;
+			showpage(mui('.mui-slider').slider().slideNumber);
+		})
+		//播放
+		$(".mp3").click(function(){
+			if($("audio")[0].paused==false){$("audio")[0].pause();return}
+		var files =[2,8,13,23,30,39,46,52,59,66,71,77,85,91,98,104,111,118,120,123,124,127,128,129,130,131,132,133];
+		for(var i =1 ;i<files.length;i++){
+			if(curpage==files[i]+startpage){
+				playmp3(i+1)
+				break;
+			}
+		}
+		return false;
+		})
+		//播放事件
+		function playmp3(i){ //SHXL01text.mp3
+			return;
+			if(i<10)i="0"+i;
+			$("audio")[0].src="mp3/SHXL"+i+"text.mp3";
+			$("audio")[0].play();
+			// console.log($("audio")[0].src)
+		}
+		//进行修改页码
+		$("#i_page").focus(function(){
+			var temp=curpage-startpage;
+			if (temp<1) {temp=1}
+			$("#i_page").val(temp);
+		})
+		//进行修改页码回车
+		$("#i_page").keypress(function(e){if(e.keyCode==13){curpage=$("#i_page").val()*1+startpage;showpage();$(".next").focus();}})
+
+		function log(...msg) {
+			console.log(msg);
+		}
+		// 初始化数据
+		function initdata() {
+
+    //   更新目录
+	$(".menu").empty();
+	$("#menu li").each(function () {
+		var p=$(this).children("p").text()
+		var b=$(this).children("b").text()
+		$(".menu").append('<li class="mui-table-view-cell" data-p="'+b+'"><a class="mui-navigate-right">'+p+'</a></li>')
+	})
+	//设置页码
+	sumpage=$("#pageTotal").text()*1;
+	startpage=$("#startPage").text()-1;
+
+	//初始化播放列表
+	$("#file li").each(function () {
+		var p=$(this).children("p").text();
+		var b=[]
+		$(this).children("b").each(function (i) {b[i]=$(this).text();})
+		playlist[p*1]=b;
+	})
+	
+		}
+
+	//显示播放图标
+	function showplayer() {
+		$("#plays").empty();
+		// <div id="plays">
+		// 		<img src="index_files/play.jpg" width="40px" data-file="1">
+		var icon_margin=$("#icon_margin").text()
+		var n=curpage-startpage;
+		if(playlist[n]!=undefined){
+			for (var i =0;  i < playlist[n].length; i++) {
+				var filename=playlist[n][i];
+				var ext=filename.substr(filename.length-3,filename.length).toLowerCase();
+				var playIcon=(ext=="mp4"?"mp4.png":"mp3.png")
+			$("#plays").append('<img src="index_files/'+playIcon+'" style="margin-bottom:'+icon_margin+'px" width="40px" data-file="'+playlist[n][i]+'">')
+			}
+			//点击图标播放
+			//$("#plays img").click(function () {
+			mui("#plays").on('tap','img',function(){
+			var filename=$(this).attr("data-file")
+			if($("audio")[0].paused==false && filename==oldmp3){$("audio")[0].pause();return}
+			oldmp3=filename;
+			var ext=filename.substr(filename.length-3,filename.length).toLowerCase();
+			if (ext=="mp4") {	//mp4
+				$("audio")[0].pause();
+				mui.alert( "<video src='index_files/"+filename+"'>", "视频", "关闭" );
+				$(".mui-popup").width("100%");
+				$("video")[0].play();
+
+			}else{	//mp3
+			$("audio")[0].src="index_files/"+filename;
+			$("audio")[0].play();
+			}
+			log("index_files/"+filename);
+			})
+		}
+	}
+// 加载完成，显示网页
+$(function(){
+	initdata();
+	showpage();
+	mui.init();
+	setTimeout(function() {mui('.mui-scroll-wrapper').scroll();}, 1000);
+})
+</script>
+</body>
+</html>
